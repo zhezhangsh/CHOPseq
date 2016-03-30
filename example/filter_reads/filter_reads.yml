@@ -1,0 +1,55 @@
+length: 50
+field: 
+  - flag
+  - qwidth
+  - mapq
+  - cigar
+filter:
+  mapq: 20
+  width: 32
+sample:
+  B_H3K4me2_ND391.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me2_ND391.rds
+  B_H3K4me2_ND422.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me2_ND422.rds
+  B_H3K4me2_ND425.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me2_ND425.rds
+  B_H3K4me2_SLE2239.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me2_SLE2239.rds
+  B_H3K4me3_ND391.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me3_ND391.rds
+  B_H3K4me3_ND422.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me3_ND422.rds
+  B_H3K4me3_ND425.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me3_ND425.rds
+  B_H3K4me3_SLE1077.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me3_SLE1077.rds
+  B_H3K4me3_SLE2239.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me3_SLE2239.rds
+  B_H3K4me3_SLE985.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/B_H3K4me3_SLE985.rds
+  M_H3K27AC_ND365_C.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K27AC_ND365_C.rds
+  M_H3K27AC_ND365_IFNA.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K27AC_ND365_IFNA.rds
+  M_H3K27AC_ND365_LPS.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K27AC_ND365_LPS.rds
+  M_H3K27AC_ND444_C.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K27AC_ND444_C.rds
+  M_H3K27AC_ND444_IFNA.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K27AC_ND444_IFNA.rds
+  M_H3K27AC_ND444_LPS.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K27AC_ND444_LPS.rds
+  M_H3K4ME2_ND365_C.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4ME2_ND365_C.rds
+  M_H3K4ME2_ND365_IFNA.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4ME2_ND365_IFNA.rds
+  M_H3K4ME2_ND365_LPS.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4ME2_ND365_LPS.rds
+  M_H3K4me2_ND391.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me2_ND391.rds
+  M_H3K4me2_ND422.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me2_ND422.rds
+  M_H3K4me2_ND425.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me2_ND425.rds
+  M_H3K4ME2_ND444_C.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4ME2_ND444_C.rds
+  M_H3K4ME2_ND444_IFNA.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4ME2_ND444_IFNA.rds
+  M_H3K4ME2_ND444_LPS.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4ME2_ND444_LPS.rds
+  M_H3K4me2_SLE2239.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me2_SLE2239.rds
+  M_H3K4me2_SLE985.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me2_SLE985.rds
+  M_H3K4me3_ND391.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me3_ND391.rds
+  M_H3K4me3_ND422.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me3_ND422.rds
+  M_H3K4me3_ND425.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me3_ND425.rds
+  M_H3K4me3_SLE1077.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me3_SLE1077.rds
+  M_H3K4me3_SLE2239.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me3_SLE2239.rds
+  M_H3K4me3_SLE985.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/M_H3K4me3_SLE985.rds
+  T_H3K4me2_ND391.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me2_ND391.rds
+  T_H3K4me2_ND422.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me2_ND422.rds
+  T_H3K4me2_ND425.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me2_ND425.rds
+  T_H3K4me2_SLE2239.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me2_SLE2239.rds
+  T_H3K4me2_SLE985.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me2_SLE985.rds
+  T_H3K4me3_ND391.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me3_ND391.rds
+  T_H3K4me3_ND422.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me3_ND422.rds
+  T_H3K4me3_ND425.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me3_ND425.rds
+  T_H3K4me3_SLE1077.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me3_SLE1077.rds
+  T_H3K4me3_SLE2239.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me3_SLE2239.rds
+  T_H3K4me3_SLE985.rds: /nas/is1/zhangz/projects/sullivan/2016-03_ChIPseq_B_M_T/r/loaded_bam/T_H3K4me3_SLE985.rds
+

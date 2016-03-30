@@ -12,8 +12,8 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
   ele<-elementLengths(len);
   
   val<-unlist(val, use.names=FALSE);
-  len<-unlist(len, use.naems=FALSE);
-  ind<-unlist(1:length(cnt), ele); 
+  len<-unlist(len, use.names=FALSE);
+  ind<-rep(1:length(ele), ele); 
   
   v<-rep(0, length(cigar));
   n<-sapply(op, function(o) {
@@ -22,6 +22,8 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
     v[as.integer(names(s))]<-s;
     v;
   });
+  
+  rownames(n)<-cigar;
   
   n; 
 }

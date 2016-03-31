@@ -16,7 +16,7 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
   ind<-rep(1:length(ele), ele); 
   
   v<-rep(0, length(cigar));
-  n<-sapply(op, function(o) {
+  n<-sapply(op, function(o) { print(val[1]); print(length(val)); 
     i<-which(val==o);
     s<-sapply(split(len[i], ind[i]), sum);
     v[as.integer(names(s))]<-s;

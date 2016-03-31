@@ -4,6 +4,7 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
   # op      Cigar operations
   
   require(GenomicAlignments);
+  require(S4Vectors);
   
   lst<-cigarToRleList(cigar); 
   
@@ -11,12 +12,12 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
   len<-runLength(lst);
   ele<-elementLengths(len);
   
-  val<-unlist(val, use.names=FALSE);
-  len<-unlist(len, use.names=FALSE);
+  val<-BiocGenerics::unlist(val, use.names=FALSE);
+  len<-BiocGenerics::unlist(len, use.names=FALSE);
   ind<-rep(1:length(ele), ele); 
   
   v<-rep(0, length(cigar));
-  n<-sapply(op, function(o) { print(val[1]); print(length(val)); 
+  n<-sapply(op, function(o) { 
     i<-which(val==o);
     s<-sapply(split(len[i], ind[i]), sum);
     v[as.integer(names(s))]<-s;

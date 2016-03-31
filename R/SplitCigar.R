@@ -7,8 +7,8 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
   
   lst<-cigarToRleList(cigar); 
   
-  val<-lapply(lst, runValue);
-  len<-lapply(lst, runLength); 
+  val<-runValue(lst);
+  len<-runLength(lst);
   ele<-elementLengths(len);
   
   val<-unlist(val, use.names=FALSE);

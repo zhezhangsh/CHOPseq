@@ -23,8 +23,30 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
     v[as.integer(names(s))]<-s;
     v;
   });
+  if (class(n)!='matrix') n<-matrix(n, nc=length(op)); 
   
   rownames(n)<-cigar;
+  colnames(n)<-op;
   
   n; 
+}
+
+# Split a very long vector of CIGAR string
+SplitCigarLong(cigar, op=c('M', 'S', 'H', 'I', 'D'), len=10^6, cores=2) {
+  # cigar     A very long vector of CIGAR strings
+  # len       The number of CIGAR strings to process per batch
+  # cores     Number of cores for parallel processing
+  
+  require(GenomicAlignments);
+  require(S4Vectors);
+  require(parallel);
+  require(CHOPseq); 
+  
+  if (length(cigar) <= len) SplitCigar(cigar, op) else {
+    ind<-rep(1:ceiling(length(cigar)/len), each=len)[1:length(cigar)];
+    cigar<-split(cigar, ind); 
+    n<-parallel::mclapply(cigar, SplitCigar, mc.cores=max(2, cores)); 
+    do.call('rbind', n); 
+  }
+  
 }

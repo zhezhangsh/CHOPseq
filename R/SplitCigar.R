@@ -32,7 +32,7 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
 }
 
 # Split a very long vector of CIGAR string
-SplitCigarLong(cigar, op=c('M', 'S', 'H', 'I', 'D'), len=10^6, cores=2) {
+SplitLongCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D'), len=10^6, cores=2) {
   # cigar     A very long vector of CIGAR strings
   # len       The number of CIGAR strings to process per batch
   # cores     Number of cores for parallel processing

@@ -19,9 +19,11 @@ SplitCigar<-function(cigar, op=c('M', 'S', 'H', 'I', 'D')) {
   v<-rep(0, length(cigar));
   n<-sapply(op, function(o) { 
     i<-which(val==o);
-    s<-sapply(split(len[i], ind[i]), sum);
-    v[as.integer(names(s))]<-s;
-    v;
+    if (length(i)>0) {
+      s<-sapply(split(len[i], ind[i]), sum);
+      v[as.integer(names(s))]<-s;
+    }
+    v
   });
   if (class(n)!='matrix') n<-matrix(n, nc=length(op)); 
   

@@ -1,4 +1,6 @@
 
+export("RetrieveSegment");
+export("RetrieveSegmentList");
 export("SplitCigar");
 export("SplitLongCigar");
 

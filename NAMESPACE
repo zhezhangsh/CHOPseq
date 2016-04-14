@@ -1,4 +1,6 @@
 
+export("ConvertCov2bedGraph");
+export("GenerateTrackLine");
 export("RetrieveSegment");
 export("RetrieveSegmentList");
 export("SplitCigar");

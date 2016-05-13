@@ -2,6 +2,11 @@
 RetrieveSegmentList<-function(values, ranges, before=0, after=before) {
   # values      A list of numeric vectors or Rles
   # ranges      an GRanges objects defining the ranges of data to be selected
+
+  require(Rsamtools);
+  require(GenomicAlignments);
+  require(chipseq);
+  
   if (is.null(names(ranges))) names(ranges)<-1:length(ranges);
   
   inds<-start(resize(ranges, 1));
@@ -29,7 +34,10 @@ RetrieveSegment<-function(v, ind, before=0, after=before) {
   # ind; indexes on the vector
   # before; extended number of locations before the indexes
   # after; extended number of locations after the indexes
-  library(chipseq);
+
+  require(Rsamtools);
+  require(GenomicAlignments);
+  require(chipseq);
   
   v<-c(Rle(rep(NA, before)), v, Rle(rep(NA, after))); 
   length<-before+after+1;
